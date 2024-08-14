@@ -3,6 +3,9 @@ import { LoginComponent } from './pages/login/login.component';
 import { LayoutComponent } from './pages/layout/layout.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { DepartmentComponent } from './pages/department/department.component';
+import { ParentcategoryComponent } from './pages/parentcategory/parentcategory.component';
+import { ChildcategoryComponent } from './pages/childcategory/childcategory.component';
+import { EmployeeComponent } from './pages/employee/employee.component';
 
 export const routes: Routes = [
     {
@@ -25,7 +28,21 @@ export const routes: Routes = [
             {
                 path:'department',
                 component:DepartmentComponent
-            }
+            },
+            {
+                path:'parent-category',
+                component:ParentcategoryComponent
+            },
+            {
+                path:'child-category',
+                component:ChildcategoryComponent
+            },
+            {
+                path:'employee',
+                component:EmployeeComponent
+            },
+
+
         ]
     }
 ];

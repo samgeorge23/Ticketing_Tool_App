@@ -60,4 +60,24 @@ export class MasterService {
   deleteCCategoryById(id:number){
     return this.httpClient.delete(this.apiUrl+`DeleteChildCategory?id=${id}`);
   }
+
+  getAllEmployee(){
+    return this.httpClient.get(this.apiUrl+"GetEmployees");
+  }
+
+  createNewEmployee(obj:any){
+    return this.httpClient.post(this.apiUrl+"CreateEmployee",obj);
+  }
+
+  updateEmployee(obj:any){
+    return this.httpClient.put(this.apiUrl+"UpdateEmployee",obj);
+  }
+
+  deleteEmployeeById(id:number){
+    return this.httpClient.delete(this.apiUrl+`DeleteEmployee?id=${id}`);
+  }
+
+  getAllRoles(){
+    return this.httpClient.get(this.apiUrl+"GetAllRoles");
+  }
 }
